@@ -1,1 +1,4 @@
 this is sample txt file
+modified line1
+modified line2
+modified line3
