@@ -1,0 +1,32 @@
+My-Findings till now
+1. For sklearn related models code got created
+2. For h2o models:
+		a. For Tree based h2o models code got created for shap value calculation (code will work on h2o version 3.32.1.2)
+		b. For Non-Tree based h2o models (code will work on h2o version 3.32.1.2)- code got created and will work if dataset has only numeric variable.
+		b. h2o version mismatch issue (if we train any model in 'x' version we need to load and use it in same 'x' version of h2o)
+		c. resolving version mismatch issue for a single model - we will download a specific version of h2o inside the model project folder and we will 
+		   import it locally. (This approach will not work in production for min kpi coz we are buiding one for all models)
+		d. I connected with prashanth, He also mentioned the issue is common in h2o models, He sugested to test the after converting the models into 
+		   MOJO file.
+		e. I tested after creating a mojo file in version 3.32.1.2 and loading it into version 3.24.0.4. It didn't worked.
+
+3. Issue that needs to be looked into:
+		a. version mismatch thing
+		b. Non-tree based h2o models - if data contains non-numeric and numeric both data.
+		
+		
+		
+My-Findings till now
+1. For sklearn related models code is present
+2. For h2o models:
+		a. For Tree based h2o models code got created for shap value calculation (code will work on h2o version 3.32.1.2)
+		b. h2o version mismatch issue (if we train any model in 'x' version we need to load and use it in same 'x' version of h2o)
+		c. resolving version mismatch issue for a single model - we will download a specific version of h2o inside the model project folder and we will 
+		   import it locally. (This approach will not work in production for min kpi coz we are buiding one for all models)
+		d. I connected with prashanth, He also mentioned the issue is common in h2o models, He sugested(He added he is 80% percent sure that it will not work) 
+		   to test the after converting the models into MOJO file.
+		e. I tested after creating a mojo file in version 3.32.1.2 and loading it into different version 3.24.0.4. It didn't worked.
+		
+3. Issue that needs to be looked into:
+		a. version mismatch thing
+		b. Non-tree based h2o models - if data contains non-numeric and numeric both data.
